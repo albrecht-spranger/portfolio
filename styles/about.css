@@ -1,6 +1,56 @@
+body {
+    font-family: "Kaisei Tokumin", serif;
+}
+
+.container {
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    color: beige;
+    background: rgba(255, 0, 0, 0.5);
+    line-height: 1.6;
+    text-align: center;
+    /* position: relative; */
+}
+
+h1::before,
+h1::after {
+    content: "";
+    display: inline-block;
+    /* position: absolute; */
+    width: 100px;
+    height: 100px;
+    background: url(../images/tsubaki.png) no-repeat center / contain;
+    vertical-align: bottom;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+}
+
 .about {
     display: flex;
     flex-direction: row;
+    gap: 48px;
+}
+
+.about__avatar {
+    max-width: 320px;
+    height: auto;
+    filter: drop-shadow(10px 10px 6px rgba(0,0,0,0.5));
 }
 
 /* スマホ向け（幅768px以下） */
