@@ -23,7 +23,7 @@ const projects = [
         id: 'pottery',
         title: '陶芸作品紹介サイト',
         role: 'Design / Frontend',
-        stack: ['HTML', 'CSS', 'JavaScript'],
+        stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'コンテナ(Docker)', 'Google Cloud Run', 'Google Cloud Firestore (NoSQL DB)'],
         period: '2025-05',
         thumb: 'images/sisiwaka-touen_thumb.jpg',
         images: ['assets/pottery_1.jpg', 'assets/pottery_2.jpg'],
@@ -54,7 +54,7 @@ const projects = [
     },
     {
         id: 'calc',
-        title: '電卓アプリ（職業訓練）',
+        title: '電卓アプリ',
         role: 'Frontend',
         stack: ['HTML', 'CSS', 'JavaScript'],
         period: '2025-04',

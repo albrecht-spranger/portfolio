@@ -19,9 +19,56 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: "Noto Sans JP", system-ui, -apple-system;
     color: var(--text);
     background: var(--bg)
+}
+
+body {
+    font-family: "Kaisei Tokumin", serif;
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    color: beige;
+    background: rgba(168, 7, 7, 0.5);
+    line-height: 1.6;
+    text-align: center;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url(../images/matsu.png) no-repeat center / contain;
+    vertical-align: bottom;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    background: url(../images/tsubaki.png) no-repeat center / contain;
+    vertical-align: text-bottom;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 img {
