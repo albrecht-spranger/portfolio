@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About & Skills | 吉川秀之</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="/">吉川秀之</a>
+        <button class="nav-toggle" aria-label="メニュー" aria-expanded="false">☰</button>
+        <nav class="site-nav" data-collapsible>
+            <a aria-current="page" href="/about.html">About & Skills</a>
+            <a href="/works.html">Works</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="about_top">
+            <h1>自己紹介</h1>
+            <p>IT業界でPMとして◯年。現在はWebエンジニアとして実装に軸足を移し、設計〜実装〜検証まで一貫した開発を目指しています。</p>
+        </section>
+
+        <article class="about">
+            <img class="about__avatar" src="images/avatar.jpg" alt="あなたの顔写真">
+            <div>
+                <h2>スキル</h2>
+                <p>(現在習得中) HTML、CSS、JavaScript</p>
+                <p>(過去の経験) アセンブリ言語、BASIC、PASCAL、VC++</p>
+                <h2>求職にあたって</h2>
+                <p>小さく速く作り、計測と改善を回すことを大切にしています。まずはWebフロント/バックの実装から貢献します。</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> YourName</p>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+
+</html>

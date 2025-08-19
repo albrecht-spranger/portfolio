@@ -25,7 +25,7 @@ const projects = [
         role: 'Design / Frontend',
         stack: ['HTML', 'CSS', 'JavaScript'],
         period: '2025-05',
-        thumb: 'assets/pottery_thumb.jpg',
+        thumb: 'images/sisiwaka-touen_thumb.jpg',
         images: ['assets/pottery_1.jpg', 'assets/pottery_2.jpg'],
         summary: '自作の陶芸作品をカテゴリ別に閲覧できるギャラリーサイト。レスポンシブ対応、CSS Gridでレイアウト。',
         highlights: [
@@ -37,12 +37,28 @@ const projects = [
         repo: 'https://github.com/yourname/pottery-site'
     },
     {
+        id: 'renovation-a',
+        title: '架空リノベ会社サイト',
+        role: '作成',
+        stack: ['HTML', 'CSS', 'JavaScript'],
+        period: '2025-06',
+        thumb: 'images/reno_a_thumb.jpg',
+        images: ['assets/reno_a_1.jpg', 'assets/reno_a_2.jpg'],
+        summary: '施工事例スライダーやFAQトグルをバニラJSで実装。軽量構成。',
+        highlights: [
+            'IntersectionObserverでフェードイン演出',
+            'アクセシブルなFAQ（details/summary）'
+        ],
+        demo: 'https://example.com/renovation-a',
+        repo: 'https://github.com/yourname/renovation-a'
+    },
+    {
         id: 'calc',
         title: '電卓アプリ（職業訓練）',
         role: 'Frontend',
         stack: ['HTML', 'CSS', 'JavaScript'],
         period: '2025-04',
-        thumb: 'assets/calc_thumb.jpg',
+        thumb: 'images/calc_thumb.jpg',
         images: ['assets/calc_1.jpg'],
         summary: '四則演算・AC・履歴表示を備えた電卓。キーボード入力にも対応。',
         highlights: [
@@ -54,51 +70,19 @@ const projects = [
     },
     {
         id: 'travel',
-        title: '架空の旅行案内サイト',
-        role: 'Design / Frontend / PHP',
-        stack: ['HTML', 'CSS', 'JavaScript', 'PHP'],
-        period: '2025-03',
-        thumb: 'assets/travel_thumb.jpg',
+        title: '架空の台湾観光案内サイト',
+        role: 'PL / TOPページ作成 / 共通部品作成',
+        stack: ['HTML', 'CSS', 'JavaScript'],
+        period: '2025年7月～8月、60時間×4人',
+        thumb: 'images/travel_thumb.jpg',
         images: ['assets/travel_1.jpg', 'assets/travel_2.jpg'],
-        summary: 'モデルコース・観光地検索・お問い合わせフォーム（PHP）を備えた架空サイト。',
+        summary: '架空の台湾観光サイト。職業訓練学校のグループ演習で作成',
         highlights: [
             '検索フィルタ（エリア/予算）',
             'フォームバリデーション（クライアント/サーバ）'
         ],
         demo: 'https://example.com/travel',
         repo: 'https://github.com/yourname/travel-guide'
-    },
-    {
-        id: 'renovation-a',
-        title: '架空リノベ会社サイト Aタイプ（vanilla JS）',
-        role: 'Design / Frontend',
-        stack: ['HTML', 'CSS', 'JavaScript'],
-        period: '2025-06',
-        thumb: 'assets/reno_a_thumb.jpg',
-        images: ['assets/reno_a_1.jpg', 'assets/reno_a_2.jpg'],
-        summary: '施工事例スライダーやFAQトグルをバニラJSで実装。軽量構成。',
-        highlights: [
-            'IntersectionObserverでフェードイン演出',
-            'アクセシブルなFAQ（details/summary）'
-        ],
-        demo: 'https://example.com/renovation-a',
-        repo: 'https://github.com/yourname/renovation-a'
-    },
-    {
-        id: 'renovation-b',
-        title: '架空リノベ会社サイト Bタイプ（Bootstrap一部利用）',
-        role: 'Design / Frontend',
-        stack: ['HTML', 'SCSS', 'Bootstrap 5', 'JavaScript'],
-        period: '2025-06',
-        thumb: 'assets/reno_b_thumb.jpg',
-        images: ['assets/reno_b_1.jpg', 'assets/reno_b_2.jpg'],
-        summary: 'Bootstrapのグリッドとナビを活用しつつ、オリジナルCSSで差別化。',
-        highlights: [
-            'Bootstrapのコンポーネント最小限利用',
-            'Lighthouse 90点台（パフォーマンス/アクセシビリティ）'
-        ],
-        demo: 'https://example.com/renovation-b',
-        repo: 'https://github.com/yourname/renovation-b'
     }
 ];
 
@@ -112,7 +96,8 @@ function renderCard(p) {
     </a>
     <div class="card__body">
       <h3 class="card__title">${p.title}</h3>
-      <div class="card__meta">${p.role} ・ ${p.period}</div>
+      <div class="card__meta">担当：${p.role}</div>
+      <div class="card__period">期間、工数：${p.period}</div>
       <div class="card__tags">${tags}</div>
       <div class="card__actions">
         <a class="btn" href="${p.demo}" target="_blank" rel="noopener">デモ</a>
