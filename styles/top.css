@@ -1,0 +1,54 @@
+.top_hero {
+    margin-bottom: 80px;
+}
+
+.top_introduction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.top_lead {
+    max-width: 640px;
+    margin: 0 auto 32px auto;
+}
+
+.top_2_about {
+    text-align: right;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    gap: 2%;
+}
+
+.card__thumb {
+    display: block;
+    width: 25%;
+    filter: sepia(100%);
+}
+
+.card__thumb:hover {
+    filter: sepia(0%);
+}
+
+.card__thumb img {
+    width: 100%;
+    height: auto;
+}
+
+.card__body {
+    width: 56%;
+}
+
+.card__actions {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

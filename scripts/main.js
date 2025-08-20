@@ -22,9 +22,9 @@ const projects = [
     {
         id: 'pottery',
         title: '陶芸作品紹介サイト',
-        role: 'Design / Frontend',
-        stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'コンテナ(Docker)', 'Google Cloud Run', 'Google Cloud Firestore (NoSQL DB)'],
-        period: '2025-05',
+        role: '設計 / 環境構築 / コーディング',
+        stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Dockerコンテナ', 'NoSQL DB', 'Google Cloud'],
+        period: '2025年5月～11月',
         thumb: 'images/sisiwaka-touen_thumb.jpg',
         images: ['assets/pottery_1.jpg', 'assets/pottery_2.jpg'],
         summary: '自作の陶芸作品をカテゴリ別に閲覧できるギャラリーサイト。レスポンシブ対応、CSS Gridでレイアウト。',
@@ -33,13 +33,13 @@ const projects = [
             'Lazy-load で表示パフォーマンス最適化',
             'アクセシブルなモーダル実装'
         ],
-        demo: 'https://example.com/pottery',
+        demo: 'https://sisiwaka-touen-web-826007989896.asia-northeast1.run.app/',
         repo: 'https://github.com/yourname/pottery-site'
     },
     {
         id: 'renovation-a',
         title: '架空リノベ会社サイト',
-        role: '作成',
+        role: 'コーディング',
         stack: ['HTML', 'CSS', 'JavaScript'],
         period: '2025-06',
         thumb: 'images/reno_a_thumb.jpg',
@@ -55,7 +55,7 @@ const projects = [
     {
         id: 'calc',
         title: '電卓アプリ',
-        role: 'Frontend',
+        role: '設計 / コーディング',
         stack: ['HTML', 'CSS', 'JavaScript'],
         period: '2025-04',
         thumb: 'images/calc_thumb.jpg',
@@ -76,7 +76,7 @@ const projects = [
         period: '2025年7月～8月、60時間×4人',
         thumb: 'images/travel_thumb.jpg',
         images: ['assets/travel_1.jpg', 'assets/travel_2.jpg'],
-        summary: '架空の台湾観光サイト。職業訓練学校のグループ演習で作成',
+        summary: '職業訓練学校のグループ演習で作成',
         highlights: [
             '検索フィルタ（エリア/予算）',
             'フォームバリデーション（クライアント/サーバ）'
@@ -91,30 +91,27 @@ function renderCard(p) {
     const tags = p.stack.map(s => `<span class="tag">${s}</span>`).join('');
     return `
   <article class="card">
-    <a href="/work-detail.html?id=${p.id}" aria-label="${p.title}の詳細へ">
-      <img src="${p.thumb}" alt="${p.title}のサムネイル">
-    </a>
-    <div class="card__body">
+    <div class="card__thumb">
+      <a href="work-detail.html?id=${p.id}">
+        <img src="${p.thumb}" alt="${p.title}のサムネイル">
+      </a>
+    </div>
+    <a href="work-detail.html?id=${p.id}" class="card__body">
       <h3 class="card__title">${p.title}</h3>
-      <div class="card__meta">担当：${p.role}</div>
-      <div class="card__period">期間、工数：${p.period}</div>
-      <div class="card__tags">${tags}</div>
-      <div class="card__actions">
-        <a class="btn" href="${p.demo}" target="_blank" rel="noopener">デモ</a>
-        <a class="btn ghost" href="${p.repo}" target="_blank" rel="noopener">GitHub</a>
-      </div>
+      <p class="card__meta">担当：${p.role}</p>
+      <p class="card__period">期間、工数：${p.period}</p>
+      <p class="card__tags">技術スタック：${tags}</p>
+    </a>
+    <div class="card__actions">
+      <a class="anchor_text" href="${p.demo}" target="_blank" rel="noopener">デモ</a>
+      <a class="anchor_text" href="${p.repo}" target="_blank" rel="noopener">GitHub</a>
     </div>
   </article>`;
 }
 
-const worksList = document.getElementById('worksList');
-if (worksList) {
-    worksList.innerHTML = projects.map(renderCard).join('');
-}
-
 const featuredWorks = document.getElementById('featuredWorks');
 if (featuredWorks) {
-    featuredWorks.innerHTML = projects.slice(0, 3).map(renderCard).join('');
+    featuredWorks.innerHTML = projects.map(renderCard).join('');
 }
 
 // === 詳細ページ描画

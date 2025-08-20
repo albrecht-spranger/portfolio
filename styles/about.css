@@ -4,31 +4,12 @@
     margin: 20px auto;
 }
 
-.back_2_top a {
-    font-size: 2rem;
-    font-weight: 600;
-    text-decoration: underline 1px #000000 ;
-    line-height: 1;
-    padding: 0;
-    margin: 0;
-}
-
-.back_2_top a:hover {
-    color: brown;
-}
-
-.container {
-    background: none;
-    max-width: 1200px;
-    padding: 0;
-}
-
 .about_head {
     display: flex;
     flex-direction: row;
     gap: 5%;
     align-items: flex-start;
-    padding: 20px;
+    margin-bottom: 64px;
 }
 
 .about__avatar_container {

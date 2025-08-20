@@ -15,42 +15,84 @@ root {
     box-sizing: border-box
 }
 
-html,
-body {
+html {
     margin: 0;
     padding: 0;
-    color: var(--text);
-    background: var(--bg)
-}
-
-body {
-    font-family: "Kaisei Tokumin", serif;
     background-image: url("../images/background.jpg");
     background-repeat: repeat;
     background-size: auto;
 }
 
-h1 {
-    font-size: 5rem;
-    font-weight: 600;
-    color: beige;
-    background: rgba(168, 7, 7, 0.5);
-    line-height: 1.6;
-    text-align: center;
+body {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 48px 20px 48px;
+    margin-top: 0;
+    color: #45341E;
+    font-family: "Kaisei Tokumin", serif;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
-h1::before,
-h1::after {
+.h1_wrapper {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* 菱形と本体の隙間 */
+    font-weight: 600;
+}
+
+/* 本体（上線＋文字＋下線） */
+.h1_title {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: max-content;
+    justify-items: center;
+    gap: 4px;
+    letter-spacing: .15em;
+    margin: 0;
+}
+
+.h1_title::after,
+.h1_title::before {
     content: "";
+    display: block;
+    width: 100%;
+    height: 36px;
+    /* 上線を100%幅で、中央に装飾画像を重ねる */
+    background:
+        url(../images/decoration.png) center/auto 100% no-repeat,
+        linear-gradient(#45341E, #45341E) center/100% 6px no-repeat;
+}
+
+.h1_title::before {
+    grid-row: 1;
+}
+
+.h1_title>span {
+    grid-row: 2;
+    font-size: 4rem;
+    line-height: 1.2;
     display: inline-block;
-    width: 100px;
-    height: 100px;
-    background: url(../images/matsu.png) no-repeat center / contain;
-    vertical-align: bottom;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.h1_title::after {
+    grid-row: 3;
+}
+
+.h1_diamond {
+    font-size: 2rem;
+    line-height: 1;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.6;
 }
@@ -64,30 +106,43 @@ h2::before {
     vertical-align: text-bottom;
 }
 
+h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+h3::before {
+    content: "■";
+    padding-right: 0.5rem;
+}
+
 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.6;
     text-align: justify;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block
+.anchor_text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: underline 1px #000000;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    color: rgb(44, 1, 83);
 }
 
-a {
-    color: inherit
+.anchor_text:hover {
+    color: brown;
 }
 
-.container {
-    max-width: 1080px;
-    margin-inline: auto;
-    padding: 24px;
 
-    background-color: honeydew;
-}
+
+
+
+
 
 .center {
     text-align: center
@@ -195,16 +250,16 @@ a {
     border: 1px solid var(--line)
 }
 
-.grid {
+/* .grid {
     display: grid;
     gap: 18px
 }
 
 .cards {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr))
-}
+} */
 
-.card {
+/* .card {
     background: var(--card);
     border: 1px solid var(--line);
     border-radius: 16px;
@@ -252,7 +307,7 @@ a {
 .card__actions a {
     flex: 1;
     text-align: center
-}
+} */
 
 .media {
     display: grid;

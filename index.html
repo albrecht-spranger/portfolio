@@ -15,49 +15,47 @@ FILE: /index.html  （トップページ）
     <meta property="og:image" content="assets/img/xxx.jpg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/top.css" />
 </head>
 
 <body>
-    <header class="site-header">
-        <a class="logo" href="/">YourName<span>Portfolio</span></a>
-        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="globalNav">☰</button>
-        <nav id="globalNav" class="site-nav" aria-label="グローバルナビゲーション">
-            <ul>
-                <li><a href="/about.html">About & Skills</a></li>
-                <li><a href="/works.html">Works</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <p>Webエンジニア志望</p>
     </header>
 
     <main>
-        <section class="hero" id="home">
-            <div class="hero__inner container">
-                <p class="badge">Webエンジニア志望</p>
-                <h1>モノづくりで社会に貢献</h1>
-                <p class="lead">PMで培った要件定義・進行管理を武器に、フロントエンド実装（HTML/CSS/JavaScript、PHP）に注力しています。</p>
-                <div class="hero__cta">
-                    <a class="btn primary" href="/works.html">制作実績を見る</a>
-                    <a class="btn ghost" href="/about.html">自己紹介</a>
-                </div>
+        <section class="top_hero">
+            <div class="h1_wrapper">
+                <span class="h1_diamond">◆</span>
+                <h1 class="h1_title"><span>まだまだ社会に貢献</span></h1>
+                <span class="h1_diamond">◆</span>
+            </div>
+            <div class="top_lead">
+                <p>PMで培った要件定義・進行管理を武器に、フロントエンド実装（HTML/CSS/JavaScript、PHP）に注力しています。</p>
+            </div>
+            <div class="top_2_about">
+                <a href="about.html" class="anchor_text">自己紹介へ</a>
             </div>
         </section>
 
-        <section class="highlight container">
-            <h2>ピックアップ作品</h2>
-            <div class="grid cards" id="featuredWorks">
-                <!-- main.jsで projects 配列から3件自動挿入 -->
-            </div>
-            <div class="center mt-20">
-                <a class="btn" href="/works.html">すべての実績</a>
+        <section class="top_works">
+            <h2>製作実績</h2>
+            <div id="featuredWorks">
+                <!-- main.jsで自動挿入 -->
             </div>
         </section>
 
-        <section class="cta container">
-            <h2>一緒にものづくりしませんか？</h2>
-            <p>小さな改善から新規開発まで幅広く対応可能です。お気軽にご相談ください。</p>
-            <a class="btn primary" href="/contact.html">お問い合わせ</a>
+        <section class="top_contact">
+            <h2>お問い合わせ</h2>
+            <form class="form" name="contact" method="post" action="thanks.html">
+                <label>お名前<input required type="text" name="name" autocomplete="name"></label>
+                <label>メール<input required type="email" name="email" autocomplete="email"></label>
+                <label>件名<input type="text" name="subject"></label>
+                <label>メッセージ<textarea required name="message" rows="6"></textarea></label>
+                <button class="btn primary" type="submit">送信</button>
+            </form>
         </section>
     </main>
 
