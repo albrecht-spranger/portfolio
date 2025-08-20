@@ -1,0 +1,36 @@
+<!-- =====================================
+FILE: /work-detail.html  （制作実績 詳細ページの雛形）
+URL例: /work-detail.html?id=renovation-a など
+===================================== -->
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Work Detail | ポートフォリオ</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="/">YourName<span>Portfolio</span></a>
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="globalNav">☰</button>
+        <nav id="globalNav" class="site-nav">
+            <ul>
+                <li><a href="/about.html">About & Skills</a></li>
+                <li><a class="active" href="/works.html">Works</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container" id="workDetail">
+        <!-- main.jsがURLの?id=を読み取り、projects から詳細を描画します -->
+    </main>
+    <footer class="site-footer">
+        <small>© <span id="year"></span> YourName</small>
+    </footer>
+    <script src="scripts/main.js" defer></script>
+</body>
+
+</html>
