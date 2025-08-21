@@ -87,6 +87,7 @@ body {
     display: inline-block;
     padding-left: 7rem;
     padding-right: 7rem;
+    text-align: center;
 }
 
 .h1_title::after {
@@ -172,14 +173,6 @@ p {
     transform: translate(0, -50%) scale(1);
 }
 
-/* 技術スタックを「、」で区切る */
-.card__tags .tech_stack::after {
-    content: "、";
-}
-
-.card__tags .tech_stack:last-child::after {
-    content: "";
-}
 
 
 

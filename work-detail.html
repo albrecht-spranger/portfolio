@@ -9,6 +9,9 @@ URL例: /work-detail.html?id=renovation-a など
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Work Detail | ポートフォリオ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/work_detail.css">
@@ -27,6 +30,12 @@ URL例: /work-detail.html?id=renovation-a など
         </div>
 
         <dl>
+            <dt>概要</dt>
+            <dd id="wd_summary">概要</dd>
+            <dt>スクリーンショット</dt>
+            <dd class="wd_dd_images">
+                <div id="wd_img_wrapper"></div>
+            </dd>
             <dt>担当</dt>
             <dd id="wd_role">担当</dd>
             <dt>製作期間</dt>
@@ -35,19 +44,13 @@ URL例: /work-detail.html?id=renovation-a など
             <dd id="wd_effort">工数</dd>
             <dt>技術スタック</dt>
             <dd id="wd_tech_stack">技術スタック</dd>
-            <dt>説明</dt>
-            <dd id="wd_summary">説明</dd>
-            <dt>スクリーンショット</dt>
-            <dd>
-                <div class="wd_img_wrapper"></div>
-            </dd>
             <dt>補足</dt>
             <dd id="wd_note">補足</dd>
         </dl>
     </main>
 
     <footer class="site-footer">
-        <small>© <span id="year"></span> YourName</small>
+        <p>&copy; 2025 吉川 秀之</p>
     </footer>
 
     <script type="module" src="scripts/work_detail.js" defer></script>
