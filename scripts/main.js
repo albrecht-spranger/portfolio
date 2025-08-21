@@ -88,7 +88,7 @@ const projects = [
 
 // === 一覧生成
 function renderCard(p) {
-    const tags = p.stack.map(s => `<span class="tag">${s}</span>`).join('');
+    const tags = p.stack.map(s => `<span class="tech_stack">${s}</span>`).join('');
     return `
   <article class="card">
     <div class="card__thumb">
@@ -96,14 +96,15 @@ function renderCard(p) {
         <img src="${p.thumb}" alt="${p.title}のサムネイル">
       </a>
     </div>
-    <a href="work-detail.html?id=${p.id}" class="card__body">
+    <div class="card__body">
       <h3 class="card__title">${p.title}</h3>
       <p class="card__meta">担当：${p.role}</p>
       <p class="card__period">期間、工数：${p.period}</p>
       <p class="card__tags">技術スタック：${tags}</p>
-    </a>
+    </div>
     <div class="card__actions">
-      <a class="anchor_text" href="${p.demo}" target="_blank" rel="noopener">デモ</a>
+      <a class="anchor_text" href="work-detail.html?id=${p.id}" target="_blank" rel="noopener">詳細</a>
+      <a class="anchor_text" href="${p.demo}" target="_blank" rel="noopener">実サイト</a>
       <a class="anchor_text" href="${p.repo}" target="_blank" rel="noopener">GitHub</a>
     </div>
   </article>`;

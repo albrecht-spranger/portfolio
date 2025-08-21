@@ -30,16 +30,16 @@
 .card__thumb {
     display: block;
     width: 25%;
-    filter: sepia(100%);
-}
-
-.card__thumb:hover {
-    filter: sepia(0%);
 }
 
 .card__thumb img {
     width: 100%;
     height: auto;
+    filter: sepia(100%) blur(1px);
+}
+
+.card__thumb img:hover {
+    filter: none;
 }
 
 .card__body {

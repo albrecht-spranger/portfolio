@@ -34,6 +34,13 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
+/* 「戻る」だけのヘッダ */
+.back_2_top {
+    text-align: right;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
 .h1_wrapper {
     margin-top: 40px;
     margin-bottom: 80px;
@@ -100,8 +107,8 @@ h2 {
 h2::before {
     content: "";
     display: inline-block;
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
     background: url(../images/tsubaki.png) no-repeat center / contain;
     vertical-align: text-bottom;
 }
@@ -124,18 +131,54 @@ p {
     text-align: justify;
 }
 
+/* テキストのリンク */
 .anchor_text {
     font-size: 1.4rem;
     font-weight: 600;
     text-decoration: underline 1px #000000;
+    text-underline-offset: .15em;
+    text-decoration-thickness: .1em;
+    text-decoration-color: rgb(83, 50, 1);
     line-height: 1;
     padding: 0;
     margin: 0;
-    color: rgb(44, 1, 83);
+    color: rgb(83, 50, 1);
+    position: relative;
+    transition: padding-left .2s ease, text-decoration-color .2s ease;
 }
 
-.anchor_text:hover {
-    color: brown;
+.anchor_text::before {
+    content: "☞";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-.2em, -50%) scale(.9);
+    /* color: var(--ink-vermilion); */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+.anchor_text:hover,
+.anchor_text:focus-visible {
+    padding-left: 1.2em;
+    outline: none;
+    /* text-decoration-color: var(--ink-vermilion); */
+}
+
+.anchor_text:hover::before,
+.anchor_text:focus-visible::before {
+    opacity: 1;
+    transform: translate(0, -50%) scale(1);
+}
+
+/* 技術スタックを「、」で区切る */
+.card__tags .tech_stack::after {
+    content: "、";
+}
+
+.card__tags .tech_stack:last-child::after {
+    content: "";
 }
 
 
