@@ -26,11 +26,9 @@ export const projects = [
         thumb: 'images/reno_a_thumb.jpg',
         images: ['images/reno_a_thumb.jpg', 'assets/reno_a_2.jpg'],
         summary: '架空のリノベーション会社のサイトを作成',
-        demo: 'https://example.com/renovation-a',
+        demo: 'http://ss953871.stars.ne.jp/renovation/index_b2.html',
         repo: 'https://github.com/yourname/renovation-a',
-        note: `　職業訓練学校の課題の1つとして作成。
-        　デザインカンプに従い、HTMLとCSSを作成。ハンバーガーメニューの表示にJavaScriptを使用。
-        　一部のデザインをBootstrapを使い実装。レスポンシブ対応`
+        note: `　職業訓練学校の課題の1つとして作成。デザインカンプに従い、コーディングしました。一部のデザインをBootstrapを使い実装しています。レスポンシブ対応`
     },
     {
         id: 'calc',
@@ -41,11 +39,11 @@ export const projects = [
         period: '2025年7月',
         thumb: 'images/calc_thumb.jpg',
         images: ['images/calc_thumb.jpg', 'images/calc_image.jpg'],
-        demo: 'https://example.com/calculator',
+        demo: 'http://ss953871.stars.ne.jp/compet_cs-10a/',
         repo: 'https://github.com/yourname/calculator',
         note: `　職業訓練学校の自由課題の1つとして、世界初のオールトランジスタ電卓「COMPET CS-10A」を模した電卓を作成。
-        　世界初の電卓は10桁×10桁の四則演算ができたが、入力は、電卓上の10桁の数字を、直接、押す方式だったので、Web画面上でもこれをシミュレートしました。
-        　演算結果は20桁。JavaScriptの浮動小数では桁数が足りないため、内部で数字(longint)と、小数点位置に分解、longintで計算することで20桁の精度を出しています。`
+        　入力は、電卓上の10桁の数字を、直接、押す方式だったので、Web画面上でもこれをシミュレートしました。
+        　演算結果は20桁。JavaScriptの浮動小数では精度が足りないため、内部で数字(longint)と、小数点位置に分解、longintで計算することで20桁の精度を出しています。`
     },
     {
         id: 'travel',
@@ -57,7 +55,9 @@ export const projects = [
         thumb: 'images/travel_thumb.jpg',
         images: ['images/travel_thumb.jpg', 'images/travel_image.jpg'],
         summary: '職業訓練学校のグループ演習で作成',
-        demo: 'https://example.com/travel',
-        repo: 'https://github.com/yourname/travel-guide'
+        demo: 'http://ss953871.stars.ne.jp/taiwan_traveler/',
+        repo: 'https://github.com/yourname/travel-guide',
+        note: `職業訓練学校のグループ演習として製作。吉川はチームリーダーと、TOPページ、共通部品(ヘッダ、フッタ、h2タグなど)の作成を担当。
+        【その他】レスポンシブ対応`
     }
 ];
