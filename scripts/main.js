@@ -31,10 +31,16 @@ function renderCard(p) {
     </div>
     <div class="card__body">
       <h3 class="card__title">${p.title}</h3>
-      <p class="card__meta">担当：${p.role}</p>
-      <p class="card__period">開発期間：${p.period}</p>
-      <p class="card__period">工数：${p.effort}</p>
-      <p class="card__tags">技術スタック：${tags}</p>
+      <dl>
+        <dt>担当</dt>
+        <dd>${p.role}</dd>
+        <dt>開発期間</dt>
+        <dd>${p.period}</dd>
+        <dt>工数</dt>
+        <dd>${p.effort}</dd>
+        <dt>技術スタック</dt>
+        <dd>${tags}</dd>
+      </dl>
     </div>
     <div class="card__actions">
       <a class="anchor_text" href="work-detail.html?id=${p.id}">詳細</a>
@@ -46,5 +52,5 @@ function renderCard(p) {
 
 const featuredWorks = document.getElementById('featuredWorks');
 if (featuredWorks) {
-  featuredWorks.innerHTML = projects.map(renderCard).join('、');
+  featuredWorks.innerHTML = projects.map(renderCard).join('');
 }

@@ -34,3 +34,65 @@ dd {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
     border-radius: 4px;
 }
+
+/* スマホ向け（幅768px以下） */
+@media screen and (max-width: 768px) {
+    dl {
+        font-size: 1.2rem;
+        display: block;
+    }
+
+    dt {
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+
+    dd {
+        text-align: center;
+    }
+
+    #wd_img_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    #wd_img_wrapper img {
+        width: 90%;
+        height: auto;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+        border-radius: 4px;
+    }
+
+    #wd_note {
+        text-align: justify;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

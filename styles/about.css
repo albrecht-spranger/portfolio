@@ -6,23 +6,9 @@
     margin-bottom: 64px;
 }
 
-.about__avatar_container {
-    width: 30%;
-    background-image: url(../images/avatar_d.jpg);
-    filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.5));
-    background-size: contain;
-    /* 画像全体を収める */
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .about__avatar {
-    width: 100%;
+    width: 30%;
     height: auto;
-}
-
-.about__avatar:hover {
-    opacity: 0;
 }
 
 .about__profile {
@@ -33,9 +19,40 @@
     margin-bottom: 64px;
 }
 
+.section_skill dl {
+    font-size: 1.5rem;
+}
+
+.section_skill dt {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.section_skill dd {
+    padding-left: 2rem;
+}
+
 /* スマホ向け（幅768px以下） */
 @media screen and (max-width: 768px) {
-    .about {
-        flex-direction: column;
+    .about_head {
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
+    .about__profile {
+        width: 100%;
+    }
+
+    .about__avatar {
+        width: 100%;
+    }
+
+    .section_skill dl {
+        font-size: 1rem;
+    }
+
+    .section_skill dt {
+        margin-top: 12px;
+        margin-bottom: 8px;
     }
 }

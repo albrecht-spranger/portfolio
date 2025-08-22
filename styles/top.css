@@ -2,13 +2,6 @@
     margin-bottom: 80px;
 }
 
-.top_introduction {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5%;
-}
-
 .top_lead {
     max-width: 640px;
     margin: 0 auto 32px auto;
@@ -16,8 +9,6 @@
 
 .top_2_about {
     text-align: center;
-    max-width: 640px;
-    margin: 0 auto;
 }
 
 /* 作品一覧 */
@@ -27,14 +18,15 @@
 
 .card {
     display: flex;
+    flex-direction: row;
     margin-top: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 80px;
     gap: 2%;
 }
 
 .card__thumb {
     display: block;
-    width: 25%;
+    width: 35%;
 }
 
 .card__thumb img {
@@ -48,7 +40,7 @@
 }
 
 .card__body {
-    width: 56%;
+    width: 46%;
 }
 
 .card__actions {
@@ -58,7 +50,26 @@
     gap: 20px;
 }
 
-/* 問合せフォーム */
+#featuredWorks dl {
+    font-size: 1.2rem;
+}
+
+#featuredWorks dt {
+    margin-bottom: 4px;
+}
+
+#featuredWorks dd {
+    margin-bottom: 8px;
+    padding-left: 2rem;
+}
+
+/*  =============================
+    問合せフォーム
+    ============================= */
+.top_contact {
+    margin-bottom: 64px;
+}
+
 .top_form {
     max-width: 640px;
     margin-left: auto;
@@ -155,7 +166,6 @@
 .taisho_button_img {
     display: block;
     width: 140px;
-    /* 実際のPNGサイズに合わせて調整 */
     height: auto;
 }
 
@@ -177,4 +187,124 @@
 /* ボタンを押した時にアニメーション適用 */
 .taisho_button:active .taisho_button_img {
     animation: press-bounce 300ms ease-out;
+}
+
+
+/*  =====================================
+    スマホ向け
+    ===================================== */
+@media (max-width:760px) {
+    .top_hero {
+        margin-bottom: 40px;
+    }
+
+    .top_lead {
+        max-width: 100%;
+        margin: 0 auto 16px auto;
+    }
+
+    /* 作品一覧 */
+    .top_works {
+        margin-bottom: 40px;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 12px;
+        margin-bottom: 64px;
+        gap: 24px;
+    }
+
+    .card__thumb {
+        width: 100%;
+    }
+
+    .card__body {
+        width: 90%;
+    }
+
+    .card__actions {
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #featuredWorks dl {
+        font-size: 1rem;
+    }
+
+    #featuredWorks dt {
+        margin-bottom: 4px;
+    }
+
+    #featuredWorks dd {
+        margin-bottom: 8px;
+        padding-left: 2rem;
+    }
+
+    /*  =============================
+    問合せフォーム
+    ============================= */
+    .top_contact {
+        margin-bottom: 32px;
+    }
+
+    .top_form {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fl {
+        position: relative;
+        margin: 12px 0;
+    }
+
+    .fl>input,
+    .fl>textarea {
+        width: 100%;
+        font-size: 1.1rem;
+        border: 2px dashed #45341E;
+        border-radius: 3px;
+        padding: 2.5rem 1rem 1rem;
+        height: 4rem;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ラベル */
+    .fl>label {
+        font-size: 1.1rem;
+    }
+
+    /* ボタン内の画像 */
+    .taisho_button_img {
+        width: 80px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

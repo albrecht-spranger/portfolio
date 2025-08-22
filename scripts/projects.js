@@ -13,9 +13,8 @@ export const projects = [
         summary: '自作の陶芸作品を紹介するギャラリーサイト',
         demo: 'https://sisiwaka-touen-web-826007989896.asia-northeast1.run.app/',
         repo: 'https://github.com/yourname/pottery-site',
-        note: `職業訓練学校での学びの集大成として制作。
-        Google Cloud Storage上に写真と動画を保存し、個々の作品の情報はNoSQL DB (Google Cloud Firestore)で管理しています。さらに、WebサーバはDockerコンテナ化し、Google Cloud Run上で動かしました。
-        その他：レスポンシブ対応、Swiperを使ったギャラリー、Lightboxを使った画像の拡大表示、など`
+        note: `　職業訓練学校での学びの集大成として制作。Google Cloud Storage上に写真と動画を保存し、個々の作品の情報はNoSQL DB (Google Cloud Firestore)で管理しています。さらに、WebサーバはDockerコンテナ化し、Google Cloud Run上で動かしました。
+        【その他】レスポンシブ対応、Swiperを使ったギャラリー、Lightboxを使った画像の拡大表示、など`
     },
     {
         id: 'renovation-a',
@@ -29,9 +28,9 @@ export const projects = [
         summary: '架空のリノベーション会社のサイトを作成',
         demo: 'https://example.com/renovation-a',
         repo: 'https://github.com/yourname/renovation-a',
-        note: `職業訓練学校の課題の1つとして作成。
-        デザインカンプに従い、HTMLとCSSを作成。ハンバーガーメニューの表示にJavaScriptを使用。
-        一部のデザインをBootstrapを使い実装。レスポンシブ対応`
+        note: `　職業訓練学校の課題の1つとして作成。
+        　デザインカンプに従い、HTMLとCSSを作成。ハンバーガーメニューの表示にJavaScriptを使用。
+        　一部のデザインをBootstrapを使い実装。レスポンシブ対応`
     },
     {
         id: 'calc',
@@ -44,9 +43,9 @@ export const projects = [
         images: ['images/calc_thumb.jpg', 'images/calc_image.jpg'],
         demo: 'https://example.com/calculator',
         repo: 'https://github.com/yourname/calculator',
-        note: `職業訓練学校の自由課題の1つとして、世界初のオールトランジスタ電卓「COMPET CS-10A」を模した電卓を作成。
-        世界初の電卓は10桁×10桁の四則演算ができたが、入力は、電卓上の10桁の数字を、直接、押す方式だったので、Web画面上でもこれをシミュレートしました。
-        演算結果は20桁。JavaScriptの浮動小数では桁数が足りないため、内部で数字(longint)と、小数点位置に分解、longintで計算することで20桁の精度を出しています。`
+        note: `　職業訓練学校の自由課題の1つとして、世界初のオールトランジスタ電卓「COMPET CS-10A」を模した電卓を作成。
+        　世界初の電卓は10桁×10桁の四則演算ができたが、入力は、電卓上の10桁の数字を、直接、押す方式だったので、Web画面上でもこれをシミュレートしました。
+        　演算結果は20桁。JavaScriptの浮動小数では桁数が足りないため、内部で数字(longint)と、小数点位置に分解、longintで計算することで20桁の精度を出しています。`
     },
     {
         id: 'travel',
