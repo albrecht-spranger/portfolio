@@ -1,5 +1,5 @@
 .top_hero {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .top_lead {
@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 24px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     gap: 2%;
 }
 
@@ -33,6 +33,7 @@
     width: 100%;
     height: auto;
     filter: sepia(100%) blur(1px);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 
 .card__thumb img:hover {
@@ -212,7 +213,7 @@
         flex-direction: column;
         align-items: center;
         margin-top: 12px;
-        margin-bottom: 64px;
+        margin-bottom: 80px;
         gap: 24px;
     }
 

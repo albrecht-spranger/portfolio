@@ -35,10 +35,23 @@ dd {
     border-radius: 4px;
 }
 
+.wd_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+#wd_2_site,
+#wd_2_github {
+    display: block;
+    width: fit-content;
+}
+
 /* スマホ向け（幅768px以下） */
 @media screen and (max-width: 768px) {
     dl {
-        font-size: 1.2rem;
+        font-size: 1rem;
         display: block;
     }
 
@@ -69,30 +82,7 @@ dd {
         text-align: justify;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .wd_links {
+        margin-top: 40px;
+    }
 }

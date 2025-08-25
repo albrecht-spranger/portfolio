@@ -9,6 +9,7 @@
 .about__avatar {
     width: 30%;
     height: auto;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 
 .about__profile {
@@ -30,6 +31,14 @@
 
 .section_skill dd {
     padding-left: 2rem;
+}
+
+.about_appeal {
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* スマホ向け（幅768px以下） */
@@ -54,5 +63,12 @@
     .section_skill dt {
         margin-top: 12px;
         margin-bottom: 8px;
+    }
+
+    .about_appeal {
+        width: 95%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
