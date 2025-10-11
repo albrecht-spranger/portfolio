@@ -65,9 +65,29 @@ document.addEventListener('DOMContentLoaded', () => {
 		el_wd_img_wrapper.appendChild(img2);
 	}
 
+<<<<<<< HEAD
 	// 補足
 	const el_wd_note = document.getElementById('wd_note');
 	if (el_wd_note) {
 		el_wd_note.textContent = p.note ?? 'TBA';
 	}
+=======
+  // 補足
+  const el_wd_note = document.getElementById('wd_note');
+  if (el_wd_note) {
+    el_wd_note.textContent = p.note ?? 'TBA';
+  }
+
+    // 実サイトへ
+  const el_2_site = document.getElementById('wd_2_site');
+  if (el_2_site) {
+    el_2_site.href = p.demo ?? '#';
+  }
+
+    // 補足
+  const el_2_github = document.getElementById('wd_2_github');
+  if (el_2_github) {
+    el_2_github.href = p.repo ?? '#';
+  }
+>>>>>>> dd4c735cd4bd4c999943b6d6b9155f67eb97c71a
 });
