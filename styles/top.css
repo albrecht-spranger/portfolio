@@ -1,132 +1,132 @@
 .top_hero {
-    margin-bottom: 80px;
+	margin-bottom: 80px;
 }
 
 .top_lead {
-    max-width: 640px;
-    margin: 0 auto 32px auto;
+	max-width: 640px;
+	margin: 0 auto 32px auto;
 }
 
 .top_2_about {
-    text-align: center;
+	text-align: center;
 }
 
 /* 作品一覧 */
 .top_works {
-    margin-bottom: 80px;
+	margin-bottom: 80px;
 }
 
 .card {
-    display: flex;
-    flex-direction: row;
-    margin-top: 24px;
-    margin-bottom: 80px;
-    gap: 2%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 24px;
+	margin-bottom: 80px;
+	gap: 2%;
 }
 
 .card__thumb {
-    display: block;
-    width: 35%;
+	display: block;
+	width: 35%;
 }
 
 .card__thumb img {
-    width: 100%;
-    height: auto;
-    filter: sepia(100%) blur(1px);
+	width: 100%;
+	height: auto;
+	filter: sepia(100%) blur(1px);
 }
 
 .card__thumb img:hover {
-    filter: none;
+	filter: none;
 }
 
 .card__body {
-    width: 46%;
+	width: 46%;
 }
 
 .card__actions {
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+	width: 15%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 #featuredWorks dl {
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 #featuredWorks dt {
-    margin-bottom: 4px;
+	margin-bottom: 4px;
 }
 
 #featuredWorks dd {
-    margin-bottom: 8px;
-    padding-left: 2rem;
+	margin-bottom: 8px;
+	padding-left: 2rem;
 }
 
 /*  =============================
     問合せフォーム
     ============================= */
 .top_contact {
-    margin-bottom: 64px;
+	margin-bottom: 64px;
 }
 
 .top_form {
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
+	max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .fl {
-    position: relative;
-    margin: 24px 0;
+	position: relative;
+	margin: 24px 0;
 }
 
 .fl>input,
 .fl>textarea {
-    box-sizing: border-box;
-    width: 100%;
-    font: inherit;
-    font-size: 1.5rem;
-    /* フォントの定義を親要素から継承する */
-    /* color: whitesmoke; */
-    /* background-color: rgb(10, 10, 20); */
-    border: 3px dashed #45341E;
-    border-radius: 6px;
-    padding: 2.5rem 1rem 1rem;
-    height: 5rem;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+	width: 100%;
+	font: inherit;
+	font-size: 1.5rem;
+	/* フォントの定義を親要素から継承する */
+	/* color: whitesmoke; */
+	/* background-color: rgb(10, 10, 20); */
+	border: 3px dashed #45341E;
+	border-radius: 6px;
+	padding: 2.5rem 1rem 1rem;
+	height: 5rem;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* テキストエリアは高さ可変 */
 .fl>textarea {
-    height: auto;
-    min-height: 10rem;
-    padding-top: calc(1.5rem + 2px);
-    resize: vertical;
+	height: auto;
+	min-height: 10rem;
+	padding-top: calc(1.5rem + 2px);
+	resize: vertical;
 }
 
 /* ラベル */
 .fl>label {
-    position: absolute;
-    left: 0.75rem;
-    top: 50%;
-    transform: translateY(-50%);
-    /* color: #888888; */
-    /* background-color: olive; */
-    /* 枠と重なる所を白で塗って見切れ防止 */
-    padding: 0 4px;
-    pointer-events: none;
-    transition:
-        top .2s ease, transform .2s ease,
-        font-size .2s ease, color .2s ease;
+	position: absolute;
+	left: 0.75rem;
+	top: 50%;
+	transform: translateY(-50%);
+	/* color: #888888; */
+	/* background-color: olive; */
+	/* 枠と重なる所を白で塗って見切れ防止 */
+	padding: 0 4px;
+	pointer-events: none;
+	transition:
+		top .2s ease, transform .2s ease,
+		font-size .2s ease, color .2s ease;
 
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 /* プレースホルダ文字は非表示（:placeholder-shownを有効化するだけに使う） */
 .fl>input::placeholder,
 .fl>textarea::placeholder {
-    color: transparent;
+	color: transparent;
 }
 
 /* 浮く条件：フォーカス中 or 値あり or オートフィル or selectが有効値 */
@@ -135,58 +135,58 @@
 .fl>textarea:not(:placeholder-shown)+label,
 .fl>input:-webkit-autofill+label,
 .fl>select:valid+label {
-    top: 6px;
-    transform: none;
-    font-size: 1rem;
-    /* color: whitesmoke; */
+	top: 6px;
+	transform: none;
+	font-size: 1rem;
+	/* color: whitesmoke; */
 }
 
 /* エラースタイル例（任意） */
 .fl.invalid>input,
 .fl.invalid>textarea {
-    border-color: #e22;
+	border-color: #e22;
 }
 
 .fl.invalid>label {
-    color: #e22;
+	color: #e22;
 }
 
 /* 送信ボタン */
 .taisho_button {
-    border: none;
-    padding: 0;
-    background: transparent;
-    cursor: pointer;
-    display: block;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    margin-left: auto;
+	border: none;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+	display: block;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+	margin-left: auto;
 }
 
 /* ボタン内の画像 */
 .taisho_button_img {
-    display: block;
-    width: 140px;
-    height: auto;
+	display: block;
+	width: 140px;
+	height: auto;
 }
 
 /* 押下アニメーション */
 @keyframes press-bounce {
-    0% {
-        transform: translate(0, 0);
-    }
+	0% {
+		transform: translate(0, 0);
+	}
 
-    40% {
-        transform: translate(3px, 4px);
-    }
+	40% {
+		transform: translate(3px, 4px);
+	}
 
-    100% {
-        transform: translate(0, 0);
-    }
+	100% {
+		transform: translate(0, 0);
+	}
 }
 
 /* ボタンを押した時にアニメーション適用 */
 .taisho_button:active .taisho_button_img {
-    animation: press-bounce 300ms ease-out;
+	animation: press-bounce 300ms ease-out;
 }
 
 
@@ -194,93 +194,93 @@
     スマホ向け
     ===================================== */
 @media (max-width:760px) {
-    .top_hero {
-        margin-bottom: 40px;
-    }
+	.top_hero {
+		margin-bottom: 40px;
+	}
 
-    .top_lead {
-        max-width: 100%;
-        margin: 0 auto 16px auto;
-    }
+	.top_lead {
+		max-width: 100%;
+		margin: 0 auto 16px auto;
+	}
 
-    /* 作品一覧 */
-    .top_works {
-        margin-bottom: 40px;
-    }
+	/* 作品一覧 */
+	.top_works {
+		margin-bottom: 40px;
+	}
 
-    .card {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 12px;
-        margin-bottom: 64px;
-        gap: 24px;
-    }
+	.card {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 12px;
+		margin-bottom: 64px;
+		gap: 24px;
+	}
 
-    .card__thumb {
-        width: 100%;
-    }
+	.card__thumb {
+		width: 100%;
+	}
 
-    .card__body {
-        width: 90%;
-    }
+	.card__body {
+		width: 90%;
+	}
 
-    .card__actions {
-        width: 80%;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+	.card__actions {
+		width: 80%;
+		flex-direction: row;
+		justify-content: space-around;
+	}
 
-    #featuredWorks dl {
-        font-size: 1rem;
-    }
+	#featuredWorks dl {
+		font-size: 1rem;
+	}
 
-    #featuredWorks dt {
-        margin-bottom: 4px;
-    }
+	#featuredWorks dt {
+		margin-bottom: 4px;
+	}
 
-    #featuredWorks dd {
-        margin-bottom: 8px;
-        padding-left: 2rem;
-    }
+	#featuredWorks dd {
+		margin-bottom: 8px;
+		padding-left: 2rem;
+	}
 
-    /*  =============================
+	/*  =============================
     問合せフォーム
     ============================= */
-    .top_contact {
-        margin-bottom: 32px;
-    }
+	.top_contact {
+		margin-bottom: 32px;
+	}
 
-    .top_form {
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+	.top_form {
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-    .fl {
-        position: relative;
-        margin: 12px 0;
-    }
+	.fl {
+		position: relative;
+		margin: 12px 0;
+	}
 
-    .fl>input,
-    .fl>textarea {
-        width: 100%;
-        font-size: 1.1rem;
-        border: 2px dashed #45341E;
-        border-radius: 3px;
-        padding: 2.5rem 1rem 1rem;
-        height: 4rem;
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-    }
+	.fl>input,
+	.fl>textarea {
+		width: 100%;
+		font-size: 1.1rem;
+		border: 2px dashed #45341E;
+		border-radius: 3px;
+		padding: 2.5rem 1rem 1rem;
+		height: 4rem;
+		box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+	}
 
-    /* ラベル */
-    .fl>label {
-        font-size: 1.1rem;
-    }
+	/* ラベル */
+	.fl>label {
+		font-size: 1.1rem;
+	}
 
-    /* ボタン内の画像 */
-    .taisho_button_img {
-        width: 80px;
-    }
+	/* ボタン内の画像 */
+	.taisho_button_img {
+		width: 80px;
+	}
 
 
 
