@@ -65,13 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		el_wd_img_wrapper.appendChild(img2);
 	}
 
-<<<<<<< HEAD
-	// 補足
-	const el_wd_note = document.getElementById('wd_note');
-	if (el_wd_note) {
-		el_wd_note.textContent = p.note ?? 'TBA';
-	}
-=======
   // 補足
   const el_wd_note = document.getElementById('wd_note');
   if (el_wd_note) {
@@ -89,5 +82,4 @@ document.addEventListener('DOMContentLoaded', () => {
   if (el_2_github) {
     el_2_github.href = p.repo ?? '#';
   }
->>>>>>> dd4c735cd4bd4c999943b6d6b9155f67eb97c71a
 });

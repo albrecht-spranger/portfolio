@@ -7,14 +7,9 @@
 }
 
 .about__avatar {
-<<<<<<< HEAD
-	width: 30%;
-	height: auto;
-=======
     width: 30%;
     height: auto;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
->>>>>>> dd4c735cd4bd4c999943b6d6b9155f67eb97c71a
 }
 
 .about__profile {
@@ -65,12 +60,6 @@
 		font-size: 1rem;
 	}
 
-<<<<<<< HEAD
-	.section_skill dt {
-		margin-top: 12px;
-		margin-bottom: 8px;
-	}
-=======
     .section_skill dt {
         margin-top: 12px;
         margin-bottom: 8px;
@@ -82,5 +71,4 @@
         margin-left: auto;
         margin-right: auto;
     }
->>>>>>> dd4c735cd4bd4c999943b6d6b9155f67eb97c71a
 }

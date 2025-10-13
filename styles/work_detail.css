@@ -50,17 +50,10 @@ dd {
 
 /* スマホ向け（幅768px以下） */
 @media screen and (max-width: 768px) {
-<<<<<<< HEAD
-	dl {
-		font-size: 1.2rem;
-		display: block;
-	}
-=======
     dl {
         font-size: 1rem;
         display: block;
     }
->>>>>>> dd4c735cd4bd4c999943b6d6b9155f67eb97c71a
 
 	dt {
 		margin-top: 20px;

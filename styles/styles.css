@@ -251,21 +251,12 @@ footer {
 			linear-gradient(#45341E, #45341E) right center/calc((100% - 40px) / 2) 3px no-repeat;
 	}
 
-<<<<<<< HEAD
-	.h1_title>span {
-		font-size: 2rem;
-		line-height: 1.2;
-		padding-left: 0;
-		padding-right: 0;
-	}
-=======
     .h1_title>span {
         font-size: 1.8rem;
         line-height: 1.2;
         padding-left: 0;
         padding-right: 0;
     }
->>>>>>> dd4c735cd4bd4c999943b6d6b9155f67eb97c71a
 
 	.h1_diamond {
 		font-size: 1.5rem;
@@ -295,11 +286,6 @@ footer {
 		font-size: 1.1rem;
 	}
 
-<<<<<<< HEAD
-	footer {
-		margin-top: 64px;
-	}
-=======
     /* 「戻る」リンク */
     .back_anchor_text {
         font-size: 1.1rem;
@@ -308,5 +294,4 @@ footer {
     footer {
         margin-top: 64px;
     }
->>>>>>> dd4c735cd4bd4c999943b6d6b9155f67eb97c71a
 }
