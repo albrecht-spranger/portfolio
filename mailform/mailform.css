@@ -183,7 +183,7 @@ figure {
 	margin: 0 0 1em;
 }
 
-a {
+/* a {
 	color: #04c;
 }
 
@@ -204,7 +204,7 @@ a:focus {
 a:hover,
 a:active {
 	outline: 0;
-}
+} */
 
 img {
 	vertical-align: middle;
@@ -269,7 +269,7 @@ br {
 }
 
 
-table {
+/* table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
@@ -282,7 +282,7 @@ td {
 
 th {
 	font-weight: bold;
-}
+} */
 
 caption {
 	font-weight: normal;
@@ -307,7 +307,7 @@ button {
 	vertical-align: middle;
 }
 
-input[type=text],
+/* input[type=text],
 input[type=password],
 textarea {
 	width: 380px;
@@ -317,12 +317,12 @@ textarea {
 	-moz-box-shadow: inset 3px 3px 0 0 rgba(0, 0, 0, 0.03);
 	-webkit-box-shadow: inset 3px 3px 0 0 rgba(0, 0, 0, 0.03);
 	box-shadow: inset 3px 3px 0 0 rgba(0, 0, 0, 0.03);
-}
+} */
 
 input[type=text]:focus,
 input[type=password]:focus,
 textarea:focus {
-	border: 1px solid #209dd9;
+	/* border: 1px solid #209dd9; */
 }
 
 input[type=button] {
@@ -336,7 +336,7 @@ input[type=button] {
 }
 
 input[type=submit] {
-	padding: 5px 8px;
+	/* padding: 5px 8px; */
 	cursor: pointer;
 }
 
@@ -994,13 +994,6 @@ legend {
 	*zoom: 1;
 }
 
-/* ボタンを囲うclassタグ */
-.button_box {
-	clear: both;
-	padding: 8px;
-	text-align: center;
-}
-
 /* 左詰の文字を表示するためのclassタグ */
 .left_txt {
 	text-align: left;
@@ -1023,7 +1016,6 @@ legend {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px 48px 20px 48px;
-	margin-top: 64px;
 	color: #45341E;
 	font-family: "Kaisei Tokumin", serif;
 	background-color: rgba(255, 255, 255, 0.15);
@@ -1035,6 +1027,11 @@ legend {
 
 .red_txt {
 	color: #ff3333;
+}
+
+.red {
+	color: #ff3333;
+	font-weight: 600;
 }
 
 /* 説明文を表示するためのタグ */
@@ -1122,6 +1119,12 @@ legend {
 .table tr {
 	font-size: 1.4rem;
 	margin-bottom: 36px;
+	font-family: "Kaisei Tokumin", serif;
+}
+
+.table th {
+	margin-bottom: 12px;
+	text-align: left;
 }
 
 .table td input[type=text] {
@@ -1174,22 +1177,28 @@ legend {
 	font-size: 13px;
 } */
 
-/* ★以下、送信ボタン */
-.taisho_button {
-	border: none;
-	padding: 0;
-	background: transparent;
-	cursor: pointer;
-	display: block;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-	margin-left: auto;
+/* 「確認」「戻る」「送信」ボタンのホルダ。右寄せ、ボタン間は40px */
+.button_box {
+	display: flex;
+	width: 100%;
+	justify-content: right;
+	gap: 40px;
 }
 
-/* ボタン内の画像 */
-.taisho_button_img {
-	display: block;
+.confirmBtn {
 	width: 140px;
-	height: auto;
+	aspect-ratio: 1172 / 432;
+	background: none;
+	background: url('https://ss953871.stars.ne.jp/portfolio/images/submit_button_frame.png') no-repeat center / 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Kaisei Tokumin", serif;
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: #f2deaf;
+	border: none;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* 押下アニメーション */
@@ -1208,6 +1217,131 @@ legend {
 }
 
 /* ボタンを押した時にアニメーション適用 */
-.taisho_button:active .taisho_button_img {
+.confirmBtn:active {
 	animation: press-bounce 300ms ease-out;
+}
+
+/* 戻るリンク */
+.back_2_top {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.back_anchor_text {
+	font-size: 1.4rem;
+	font-weight: 600;
+	text-decoration: underline 1px rgb(83, 50, 1);
+	text-underline-offset: .15rem;
+	text-decoration-thickness: .1rem;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	color: rgb(83, 50, 1);
+	position: relative;
+	transition: padding-right .2s ease, text-decoration-color .2s ease;
+}
+
+.back_anchor_text::after {
+	content: "☜";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(-.2rem, -50%) scale(.9);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .2s ease, transform .2s ease;
+}
+
+.back_anchor_text:hover,
+.back_anchor_text:focus-visible {
+	padding-right: 1.2rem;
+	outline: none;
+}
+
+.back_anchor_text:hover::after,
+.back_anchor_text:focus-visible::after {
+	opacity: 1;
+	transform: translate(0, -50%) scale(1);
+}
+
+
+/* ==========================================
+	スマホ向け
+========================================== */
+@media (max-width:760px) {
+	#wrapper {
+		max-width: 100%;
+		margin: 0;
+		padding: 40px 12px;
+	}
+
+	#main {
+		padding: 0;
+	}
+
+	/* タイトル */
+	.section__ttl {
+		font-size: 1.5rem;
+		font-weight: 500;
+		line-height: 1.6;
+
+		margin-bottom: 24px;
+	}
+
+	.section__ttl::before {
+		width: 28px;
+		height: 28px;
+	}
+
+	/* 説明文 */
+	#txt_explain {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	.section__body {
+		padding: 0;
+	}
+
+	.table tr {
+		font-size: 1rem;
+		margin-bottom: 18px;
+	}
+
+	.table th {
+		margin-bottom: 6px;
+	}
+
+	.table td input[type=text] {
+		font-size: 1rem;
+		border: 1px dashed #45341E;
+		border-radius: 3px;
+		padding: 0.5rem;
+		height: 2rem;
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+	}
+
+	.table td textarea {
+		font-size: 1rem;
+		border: 1px dashed #45341E;
+		border-radius: 3px;
+		padding: 0.5rem;
+		height: 8rem;
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+	}
+
+	.button_box {
+		gap: 20px;
+	}
+
+	.confirmBtn {
+		width: 80px;
+		font-size: 1.2rem;
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+	}
+
+	/* 「戻る」リンク */
+	.back_anchor_text {
+		font-size: 1.1rem;
+	}
 }
