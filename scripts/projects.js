@@ -11,7 +11,7 @@ export const projects = [
         thumb: 'images/sisiwaka-touen_thumb.jpg',
         images: ['images/sisiwaka-touen_thumb.jpg', 'images/sisiwaka-touen_image.jpg'],
         summary: '自作の陶芸作品を紹介するギャラリーサイト',
-        demo: 'https://sisiwaka-touen-web-826007989896.asia-northeast1.run.app/',
+        demo: 'https://ss953871.stars.ne.jp/sisiwaka_touen/',
         repo: 'https://github.com/albrecht-spranger/sisiwaka-touen',
         note: `　職業訓練学校での学びの集大成として、陶芸作品を紹介するWebサイトを制作しました。
         　写真や動画はGoogle Cloud Storageに保存し、作品情報はCloud Firestoreで管理、WebサーバはDockerコンテナ化してCloud Run上で運用しています。
