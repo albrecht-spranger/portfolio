@@ -12,25 +12,41 @@ export const projects = [
         images: ['images/sisiwaka-touen_thumb.jpg', 'images/sisiwaka-touen_image.jpg'],
         summary: '自作の陶芸作品を紹介するギャラリーサイト',
         demo: 'https://ss953871.stars.ne.jp/sisiwaka_touen/',
-        repo: 'https://github.com/albrecht-spranger/sisiwaka-touen',
+        repo: 'https://github.com/albrecht-spranger/sisiwaka_touen.git',
         note: `　職業訓練学校での学びの集大成として、陶芸作品を紹介するWebサイトを制作しました。
         　写真や動画はGoogle Cloud Storageに保存し、作品情報はCloud Firestoreで管理、WebサーバはDockerコンテナ化してCloud Run上で運用しています。
         　さらに、レスポンシブ対応を施し、Swiperによるギャラリー表示やLightboxによる拡大表示など、作品をより魅力的に見せる工夫を取り入れました。`
     },
-    {
-        id: 'renovation-a',
-        title: '架空リノベ会社サイト',
+        {
+        id: 'ccdonuts',
+        title: 'ショッピングサイトの構築',
         role: 'コーディング',
-        stack: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
-        period: '2025年6月',
-        effort: '30時間',
-        thumb: 'images/reno_a_thumb.jpg',
-        images: ['images/reno_a_thumb.jpg', 'images/reno_a_image.jpg'],
-        summary: '架空のリノベーション会社のサイトを作成',
-        demo: 'http://ss953871.stars.ne.jp/renovation/index_b2.html',
-        repo: 'https://github.com/albrecht-spranger/renovation',
-        note: `　職業訓練学校の課題の1つとして作成。デザインカンプに従い、コーディングしました。一部のデザインをBootstrapを使い実装しています。レスポンシブ対応`
+        stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL (MariaDB)'],
+        period: '2025年9月～10月',
+        effort: '1ヶ月',
+        thumb: 'images/ccdonuts01.jpg',
+        images: ['images/ccdonuts01.jpg', 'images/ccdonuts02.jpg'],
+        summary: '空のドーナツショップ「C.C.Donuts」のショッピングサイト',
+        demo: 'https://ss953871.stars.ne.jp/ccdonuts/',
+        repo: 'https://github.com/albrecht-spranger/ccdonuts',
+        note: `　職業訓練学校の課題の1つとして作成。<br>デザインカンプに従い、サイトをコーディング。
+        　さらに、PHP＋MySQLを使い、ログイン／お気に入り／カート／購入など、ショッピングサイトに必要な機能を一通り作成しました（クレジットカードを使った決済は除く）。
+        　売上数による「人気ドーナツランキング」の表示や、テキスト検索の機能も実装。レスポンシブ対応`
     },
+    // {
+    //     id: 'renovation-a',
+    //     title: '架空リノベ会社サイト',
+    //     role: 'コーディング',
+    //     stack: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+    //     period: '2025年6月',
+    //     effort: '30時間',
+    //     thumb: 'images/reno_a_thumb.jpg',
+    //     images: ['images/reno_a_thumb.jpg', 'images/reno_a_image.jpg'],
+    //     summary: '架空のリノベーション会社のサイトを作成',
+    //     demo: 'http://ss953871.stars.ne.jp/renovation/index_b2.html',
+    //     repo: 'https://github.com/albrecht-spranger/renovation',
+    //     note: `　職業訓練学校の課題の1つとして作成。デザインカンプに従い、コーディングしました。一部のデザインをBootstrapを使い実装しています。レスポンシブ対応`
+    // },
     {
         id: 'calc',
         title: '電卓アプリ',
