@@ -1,0 +1,1 @@
+mysql.exe -u root < C:\xampp\htdocs\portfolio\db\backup_all.sql

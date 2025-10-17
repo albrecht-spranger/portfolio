@@ -1,0 +1,1 @@
+mysql.exe -u root < G:\マイドライブ\00_WebSite\portfolio\db\backup_all.sql
