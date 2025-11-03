@@ -20,7 +20,7 @@ export const projects = [
 	{
 		id: 'pottery2',
 		title: '陶芸作品紹介サイト(その2)',
-		role: 'コーディングにChatGPT利用',
+		role: 'コーディングにChatGPTを利用',
 		stack: ['HTML', 'CSS', 'JavaScript', 'Node.js (Express)', 'Google Cloud Buildpacks', 'Google Cloud Firestore', 'Google Cloud Storage'],
 		period: '2025年10月',
 		effort: '4日',
@@ -29,8 +29,8 @@ export const projects = [
 		summary: '陶芸作品紹介サイトをNode.js (Express)に置き換え',
 		demo: 'https://sisiwaka-run-826007989896.asia-northeast1.run.app/',
 		repo: 'https://github.com/albrecht-spranger/sisiwaka_run.git',
-		note: `　自分の陶芸作品紹介サイトのバックエンドを、PHP＋MySQLから、Node.js (Express)＋Google Cloud Firestoreに置き換えてみました。さらに、環境をGoogle Could Buildpacksにしました。バックエンドを変えただけなので、見た目は何も変わっていません。
-		　自分ではほぼコーディングはせず、ChatGPTに移植をお願いすることで4日程度で完成しました。`
+		note: `　自分の陶芸作品紹介サイトのバックエンドを、PHP＋MySQLから、Node.js (Express)＋Google Cloud Firestoreに置き換えてみました。さらに、動作環境をスターレンタルサーバからGoogle Could Buildpacksにしました。バックエンドと環境を変えただけなので、見た目はまったく変わっていません。
+		　自分ではコーディングせず、ChatGPTに移植をお願いすることで、ほとんどの機能が4日程度で完成しました（その後、自分の手で微調整しています）。`
 	},
 	{
 		id: 'ccdonuts',
