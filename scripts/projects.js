@@ -32,22 +32,22 @@ export const projects = [
 		note: `　自分の陶芸作品紹介サイトのバックエンドを、PHP＋MySQLから、Node.js (Express)＋Google Cloud Firestoreに置き換えてみました。さらに、動作環境をスターレンタルサーバからGoogle Could Buildpacksにしました。バックエンドと環境を変えただけなので、見た目はまったく変わっていません。
 		　自分ではコーディングせず、ChatGPTに移植をお願いすることで、ほとんどの機能が4日程度で完成しました（その後、自分の手で微調整しています）。`
 	},
-	{
-		id: 'ccdonuts',
-		title: 'ショッピングサイトの構築',
-		role: 'コーディング',
-		stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-		period: '2025年9月～10月',
-		effort: '1ヶ月',
-		thumb: 'images/ccdonuts01.jpg',
-		images: ['images/ccdonuts01.jpg', 'images/ccdonuts02.jpg'],
-		summary: '架空のドーナツショップ「C.C.Donuts」のショッピングサイト',
-		demo: 'https://ss953871.stars.ne.jp/ccdonuts/',
-		repo: 'https://github.com/albrecht-spranger/ccdonuts',
-		note: `　職業訓練校の課題の1つとして作成。デザインカンプに従い、サイトをコーディング。
-        　さらに、PHPとMySQLを使い、ログイン／お気に入り／カート／購入など、ショッピングサイトに必要な機能を一通り作成しました（クレジットカードを使った決済は除く）。
-        　売上数による「人気ドーナツランキング」の表示や、テキスト検索の機能も実装。レスポンシブ対応`
-	},
+	// {
+	// 	id: 'ccdonuts',
+	// 	title: 'ショッピングサイトの構築',
+	// 	role: 'コーディング',
+	// 	stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
+	// 	period: '2025年9月～10月',
+	// 	effort: '1ヶ月',
+	// 	thumb: 'images/ccdonuts01.jpg',
+	// 	images: ['images/ccdonuts01.jpg', 'images/ccdonuts02.jpg'],
+	// 	summary: '架空のドーナツショップ「C.C.Donuts」のショッピングサイト',
+	// 	demo: 'https://ss953871.stars.ne.jp/ccdonuts/',
+	// 	repo: 'https://github.com/albrecht-spranger/ccdonuts',
+	// 	note: `　職業訓練校の課題の1つとして作成。デザインカンプに従い、サイトをコーディング。
+    //     　さらに、PHPとMySQLを使い、ログイン／お気に入り／カート／購入など、ショッピングサイトに必要な機能を一通り作成しました（クレジットカードを使った決済は除く）。
+    //     　売上数による「人気ドーナツランキング」の表示や、テキスト検索の機能も実装。レスポンシブ対応`
+	// },
 	// {
 	//     id: 'renovation-a',
 	//     title: '架空リノベ会社サイト',
@@ -78,18 +78,18 @@ export const projects = [
         　入力方式は実機同様、電卓上の10桁キーを押すスタイルをWeb上で再現しています。
         　演算結果は最大20桁に対応しており、JavaScriptの浮動小数点精度の限界を補うために、入力値を整数部と小数点位置に分解し、longintで計算する仕組みを実装しました。`
 	},
-	{
-		id: 'travel',
-		title: '観光案内サイト',
-		role: 'PL / TOPページ作成 / 共通部品作成',
-		stack: ['HTML', 'CSS', 'JavaScript'],
-		period: '2025年7月～8月',
-		effort: '60時間×4人',
-		thumb: 'images/travel_thumb.jpg',
-		images: ['images/travel_thumb.jpg', 'images/travel_image.jpg'],
-		summary: '職業訓練校のグループ演習で作成。架空の観光案内サイト',
-		demo: 'http://ss953871.stars.ne.jp/taiwan_traveler/',
-		repo: 'https://github.com/albrecht-spranger/taiwan_traveler',
-		note: `　職業訓練校のグループ演習として製作。チームリーダとして開発進行を取りまとめるとともに、TOPページ、共通部品(ヘッダ、フッタ、h2タグなど)の作成を担当しました。`
-	}
+	// {
+	// 	id: 'travel',
+	// 	title: '観光案内サイト',
+	// 	role: 'PL / TOPページ作成 / 共通部品作成',
+	// 	stack: ['HTML', 'CSS', 'JavaScript'],
+	// 	period: '2025年7月～8月',
+	// 	effort: '60時間×4人',
+	// 	thumb: 'images/travel_thumb.jpg',
+	// 	images: ['images/travel_thumb.jpg', 'images/travel_image.jpg'],
+	// 	summary: '職業訓練校のグループ演習で作成。架空の観光案内サイト',
+	// 	demo: 'http://ss953871.stars.ne.jp/taiwan_traveler/',
+	// 	repo: 'https://github.com/albrecht-spranger/taiwan_traveler',
+	// 	note: `　職業訓練校のグループ演習として製作。チームリーダとして開発進行を取りまとめるとともに、TOPページ、共通部品(ヘッダ、フッタ、h2タグなど)の作成を担当しました。`
+	// }
 ];
