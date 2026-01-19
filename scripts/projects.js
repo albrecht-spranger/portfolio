@@ -2,8 +2,39 @@
 
 export const projects = [
 	{
+		id: 'pottery3',
+		title: '陶芸作品紹介サイト3 (Spring Boot使用版)',
+		role: 'コーディングにChatGPTを利用',
+		stack: ['HTML', 'CSS', 'JavaScript', 'Spring Boot', 'Google Cloud Buildpacks', 'Supabase (PostgreSQL)', 'Google Cloud Storage'],
+		period: '2025年12月～2026年1月',
+		effort: '7日',
+		thumb: 'images/sisiwaka_touen_thumb.jpg',
+		images: ['images/sisiwaka_touen_thumb.jpg', 'images/sisiwaka_touen_image.jpg'],
+		summary: '陶芸作品紹介サイト(オリジナル)をSpring Bootに置き換え',
+		demo: 'https://sisiwaka-spring-826007989896.asia-northeast1.run.app/',
+		repo: 'https://github.com/albrecht-spranger/sisiwaka_spring.git',
+		note: `　自分の陶芸作品紹介サイトを、Java (Spring Boot)で実装しなおしました。
+		　といっても、陶芸作品紹介サイト(Node.js使用版)同様、ChatGPTに移植をお願いすることで、ほとんどの機能が7日程度で完成しました。Javaのコーディング経験はありませんでしたが(PMとして工程管理など流行っていました)、今回、ChatGPTに首っ引きで教えてもらい、少しは理解できたような気がします。
+		　アプリケーションはGoogle Cloud上で構築、DBはSupabase (PostgreSQL)を利用しています。`
+	},
+	{
+		id: 'pottery2',
+		title: '陶芸作品紹介サイト2 (Node.js使用版)',
+		role: 'コーディングにChatGPTを利用',
+		stack: ['HTML', 'CSS', 'JavaScript', 'Node.js (Express)', 'Google Cloud Buildpacks', 'Google Cloud Firestore', 'Google Cloud Storage'],
+		period: '2025年10月',
+		effort: '4日',
+		thumb: 'images/sisiwaka_touen_thumb.jpg',
+		images: ['images/sisiwaka_touen_thumb.jpg', 'images/sisiwaka_touen_image.jpg'],
+		summary: '陶芸作品紹介サイト(オリジナル)をNode.js (Express)に置き換え',
+		demo: 'https://sisiwaka-run-826007989896.asia-northeast1.run.app/',
+		repo: 'https://github.com/albrecht-spranger/sisiwaka_run.git',
+		note: `　自分の陶芸作品紹介サイトのバックエンドを、PHP＋MySQLから、Node.js (Express)＋Google Cloud Firestoreに置き換えてみました。さらに、動作環境をスターレンタルサーバからGoogle Could Buildpacksにしました。バックエンドと環境を変えただけなので、見た目はまったく変わっていません。
+		　自分ではコーディングせず、ChatGPTに移植をお願いすることで、ほとんどの機能が4日程度で完成しました（その後、自分の手で微調整しています）。`
+	},
+	{
 		id: 'pottery',
-		title: '陶芸作品紹介サイト',
+		title: '陶芸作品紹介サイト1 (オリジナル)',
 		role: '設計 / コーディング',
 		stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'Google Cloud Storage'],
 		period: '2025年10月～11月',
@@ -16,21 +47,6 @@ export const projects = [
 		note: `　職業訓練校での学びの集大成として、自分の陶芸作品を紹介するWebサイトを制作しました。
         　写真や動画はGoogle Cloud Storageに保存し、作品情報はMySQLで管理しています。
         　さらに、レスポンシブ対応を施し、Isotopeによる一覧表示、Swiperによるギャラリー表示など、作品をより魅力的に見せる工夫を取り入れました。`
-	},
-	{
-		id: 'pottery2',
-		title: '陶芸作品紹介サイト(その2)',
-		role: 'コーディングにChatGPTを利用',
-		stack: ['HTML', 'CSS', 'JavaScript', 'Node.js (Express)', 'Google Cloud Buildpacks', 'Google Cloud Firestore', 'Google Cloud Storage'],
-		period: '2025年10月',
-		effort: '4日',
-		thumb: 'images/sisiwaka_touen_thumb.jpg',
-		images: ['images/sisiwaka_touen_thumb.jpg', 'images/sisiwaka_touen_image.jpg'],
-		summary: '陶芸作品紹介サイトをNode.js (Express)に置き換え',
-		demo: 'https://sisiwaka-run-826007989896.asia-northeast1.run.app/',
-		repo: 'https://github.com/albrecht-spranger/sisiwaka_run.git',
-		note: `　自分の陶芸作品紹介サイトのバックエンドを、PHP＋MySQLから、Node.js (Express)＋Google Cloud Firestoreに置き換えてみました。さらに、動作環境をスターレンタルサーバからGoogle Could Buildpacksにしました。バックエンドと環境を変えただけなので、見た目はまったく変わっていません。
-		　自分ではコーディングせず、ChatGPTに移植をお願いすることで、ほとんどの機能が4日程度で完成しました（その後、自分の手で微調整しています）。`
 	},
 	// {
 	// 	id: 'ccdonuts',
@@ -45,8 +61,8 @@ export const projects = [
 	// 	demo: 'https://ss953871.stars.ne.jp/ccdonuts/',
 	// 	repo: 'https://github.com/albrecht-spranger/ccdonuts',
 	// 	note: `　職業訓練校の課題の1つとして作成。デザインカンプに従い、サイトをコーディング。
-    //     　さらに、PHPとMySQLを使い、ログイン／お気に入り／カート／購入など、ショッピングサイトに必要な機能を一通り作成しました（クレジットカードを使った決済は除く）。
-    //     　売上数による「人気ドーナツランキング」の表示や、テキスト検索の機能も実装。レスポンシブ対応`
+	//     　さらに、PHPとMySQLを使い、ログイン／お気に入り／カート／購入など、ショッピングサイトに必要な機能を一通り作成しました（クレジットカードを使った決済は除く）。
+	//     　売上数による「人気ドーナツランキング」の表示や、テキスト検索の機能も実装。レスポンシブ対応`
 	// },
 	// {
 	//     id: 'renovation-a',
